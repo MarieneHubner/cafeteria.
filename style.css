@@ -1,0 +1,109 @@
+@charset "utf-8"; /* Define quais caracteres poderão ser utilizados dentro do site */
+@font-face{
+font-family: fonte;
+src:url(fonte/kidness_coffee/Kidness\ Coffee.ttf);
+}
+
+h1{
+    font-family: fonte;
+    font-size: 4em;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9fbfb;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.main-header{
+    display: flex; /*tira do formato padrão e possibilita montar o site de forma mais dinâmica, devemos colocar este antes dos (flex-direction e align-items)*/
+    flex-direction: column; /*manterá o item (tag, class, id) em formato de coluna, linha, coluna invertida e linha unvertida*/
+    align-items: center; /*irá posicionar o item seguindo a regra do formato escolhido em flex-direction*/
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.main-header h1{
+    font-size: 4em;
+    margin-bottom: 1.2em;
+    line-height: 1.2em;
+}
+
+.main-header h1 span {
+    color: #4f2409;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+    overflow:hidden;
+    padding: 0 2em;
+}
+
+img{
+    width: 100%;
+}
+.card{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 2em;
+background: #a0724b;
+margin-bottom: 2em;
+
+}
+.card h3{
+    margin-bottom: 2em;
+}
+
+.card div{
+ padding: 2em;
+}
+
+.card:nth-child(even) img{
+    order: 2;
+}
+
+.btn{
+    background: #000;
+    color: #f1f1f1;
+    padding: 0.6em 1.6em;
+    margin-top: 2em;
+    display: inline-block;
+    cursor: default;
+}
+.btn:hover{
+background: purple;
+opacity: 0.7;
+border-radius: 9px;
+}
+
+p{
+    color: #080508;
+    padding-bottom: 5%;
+    
+}
+
+p{
+    color: #000;
+}
+
+table{
+    margin-left: 500px;
+
+
+}
+footer{
+    text-align: center;
+}
